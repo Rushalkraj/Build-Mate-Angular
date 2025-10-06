@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
-import { ChatbotComponent } from './components/chatbot/chatbot.component';
+import { ChatbotComponent } from './components/chatbot/chatbot.component'; 
 
 @Component({
     selector: 'app-root',
@@ -28,5 +28,5 @@ import { ChatbotComponent } from './components/chatbot/chatbot.component';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-    title = 'ERP Frontend';
+    title = 'Build Mate';
 }
