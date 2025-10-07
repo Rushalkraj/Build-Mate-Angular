@@ -31,11 +31,14 @@ import { Subscription } from 'rxjs';
           <h3>Build Mate</h3>
         </div>
         <div class="header-actions">
-          <button class="menu-btn" aria-label="Menu">
+          <!-- <button class="menu-btn" aria-label="Menu">
             <i class="fas fa-ellipsis-v"></i>
-          </button>
+          </button> -->
           <button class="fullscreen-btn" (click)="toggleFullScreen()" [attr.aria-label]="isFullScreen ? 'Exit Fullscreen' : 'Fullscreen'">
             <i class="fas" [ngClass]="isFullScreen ? 'fa-compress' : 'fa-expand'"></i>
+          </button>
+           <button class="action-btn" (click)="clearChat()" title="Clear conversation">
+            <i class="fas fa-sync"></i>
           </button>
           <button class="close-btn" (click)="togglePanel()" aria-label="Close">
             <i class="fas fa-times"></i>
@@ -116,9 +119,9 @@ import { Subscription } from 'rxjs';
           </button>
         </div>
         <div class="input-actions">
-          <button class="action-btn" (click)="clearChat()" title="Clear conversation">
+          <!-- <button class="action-btn" (click)="clearChat()" title="Clear conversation">
             <i class="fas fa-trash"></i>
-          </button>
+          </button> -->
         </div>
       </div>
       <!-- Resize handle -->
